@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>propiedades_texto_jhairmartin</title>
+    <style>
+#titulo {font-size: 2.5em; text-align: center;}
+
+#texto-em {
+    font-size:1.75em;;
+}
+#texto-px {font-size:18px;}
+
+.italics {font-style: italic;}
+
+#fina {
+    font-weight: lighter;
+}
+
+#gruesa {font-weight: bolder;}
+
+#setenta {
+    line-height: 70%;
+}
+
+#separacion-dos {
+    line-height: 1.6em;
+}
+
+    </style>
+</head>
+<body>
+   <h1 id="titulo">Propiedades de texto en CSS</h1>
+   
+    <h1>1. Fuentes de letras</h1>
+
+    <p>Es un conjunto de signos de tamaño y tipo específico ilustrado por un procesador de textos <br> 
+    Para decirle al ordenador que tipo deberiamos usar, están la propiedad "font-family", esta a su vez se divide en dos </p>
+
+    <ul><li>Genérico: En este caso el ordenador escoge la fuente que primero atribuye, como "sans-serif"</li>
+    <li>Específico: Y aquí se manda que el ordenador utilize la fuente escrita, por ejemplo, si queremos usar Helvetica, ponemos ""Helvetica", sans-serif"</li>
+    </ul>
+
+<h2>Tamaño de fuente (font-size)</h2>
+
+<p>Aunque haya multiples maneras de escribirlas, nos quedaremos con dos:</p>
+
+<ul><li>En píxeles (px), útil para medidas precisas</li>
+<li>En "em", con un número atrás siendo el multiplicador de la letra más pequeña</li></ul>
+
+<p id="texto-em">Este texto esta a tamaño 1.75em</p>
+<p id="texto-px">Mientras este tiene un tamaño de 18 píxeles</p>
+
+<h2>Estilo de fuente (font-style)</h2>
+
+<p>Esta vez su uso es estilizar párrafos, entre otros</p>
+
+<p class="italics">Ejemplo de texto en italics</p>
+
+<h2>"Peso" de la fuente (font-weight)</h2>
+
+<p>Por último este comando regula cómo de fino o grueso debería verse un texto</p>
+
+<p id="fina">Las letras de este texto son finas</p> 
+
+<p id="gruesa">Y las de aquí, gruesas</p>
+
+<h1>2. Líneas y textos enteros</h1>
+
+<h4>Sabiendo lo que es descrito en el punto 1, podemos alterar unidades más grandes que solo un texto</h4>
+
+<h2>Altura de línea</h2>
+
+<p>Indica el espacio entre líneas, siendo normalmente 110-120%, y utiliza, por ejemplo, píxeles ó em, siendo la separación dependiente de la fuente elegida en este caso)</p>
+
+<p id="setenta"">Así se visualiza un texto <br>
+con una separación del 70%</p>
+
+<p id="separacion-dos" class="texto-px">Por el contrario, un texto con una separación de 1.6em <br>
+se vería de esta manera</p>
+</body>
+</html>

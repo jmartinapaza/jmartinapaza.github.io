@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mas_etiquetas_html_jhairmartin</title>
+    <style>
+
+   body {
+background-color:rgb(255, 224, 102);
+
+   }
+h1 {
+  color:rgb(51, 204, 51);
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">1. Enlaces JM</h1>
+
+    <h2>Definición</h2>
+
+    <p>Vínculos que sirven para llegar de un texto a otro (función hipertexto), llegan la etiqueta "a" (del inglés "anchor") con posibles atributos dentro de esta</p>
+
+    <h2>Enlace desde texto</h2>
+
+    <p>Poniendo texto entre las etiquetas "a", este redirigirá hacia la URL indicada previamente</p> <br>
+    <p><a href="https://www.iesgaherrera.com">Ejemplo de texto dirigiendo a la página del instituto</a></p>
+
+    <h2>Enlace desde imagen</h2>
+
+    <p>A su vez se puede usar una imagen (en forma de URL o archivo local) para el mismo fin</p> <br>
+ <ul><li>El vínculo de la imagen de abajo nos lleva a Wikipedia</li></ul>
+<a href="https://en.wikipedia.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" height="200"></a>
+
+<h2>Enlaces absolutos</h2>
+
+<p>En el atributo "href", ponemos la dirección URL completa del sitio web que queremos vincular (empezando en http o https)</p>
+
+<p><A target="_blank" href="https://educamosclm.castillalamancha.es">Enlace a EducamosCLM</A></p>
+
+<h2>Enlaces relativos</h2>
+
+<p>Esta vez, se introduce en href la carpeta y/o archivo que vinculamos</p>
+
+<p><a href="index.html">Enlace que nos lleva de vuelta al índice</a></p>
+
+<h2>Enlaces que se abren en una ventana distinta</h2>
+
+<p>Con el nuevo atributo "target", indicamos al ordenador donde abrir el enlace</p>
+
+<p><a target="_blank" href="https://www.iesgaherrera.com">Enlace a la página del instituto, esta vez abriéndose en una nueva ventana</a></p>
+
+<h2>Enlaces internos</h2>
+
+<p>Mejor conocidas como "saltos de página", tienen esa misma función, y usamos el id para resaltarlo</p>
+
+<p><a href="#titulo">Ir de vuelta la principio de la página</a></p>
+
+<h1>2. Tablas</h1>
+
+<p>Podemos dividirlas en 3 partes, las celdas, filas y cabeceras:
+
+    <ul>
+<li>Las celdas se marcan con la etiqueta "td", con relación a su nombre (table data), en las celdas escribimos información o datos relevantes</li>
+<li>Las filas regulan cuando empiezan y acaban las celdas, sienco contenidas en la etiqueta "tr" (table row)</li>
+<li>Las cabeceras son un tipo especial de celda usadas para enunciar que está siendo clasificado en las celdas, su etiqueta es "th" (table header)</li> </ul>
+
+Todos estos elementos están incluidos dentro de la etiqueta "table"</p>
+
+<p>Tabla de ejemplos, en este caso, ciudades de Canadá</p>
+
+<table>
+    <tr>
+      <th>Ciudad</th>
+      <th>Región</th>
+      <th>Población</th>
+    </tr>
+    <tr>
+      <td>Toronto</td>
+      <td>Ontario</td>
+      <td>2.5 millones</td>
+    </tr>
+    <tr>
+      <td>Montreal</td>
+      <td>Québéc</td>
+      <td>1.7 millones</td>
+      <tr>
+        <td>Vancouver</td>
+        <td>Columbia Británica</td>
+        <td>1 millón</td>
+      </tr>
+      <tr>
+        <td>Ottawa</td>
+        <td>Ontario</td>
+        <td>950 mil</td>
+      </tr>
+      <tr>
+        <td>Edmonton</td>
+        <td>Alberta</td>
+        <td>730 mil</td>
+      </tr>
+    </tr>
+  </table>
+
+  <h1>3. Comentarios</h1>
+
+  <p>Indican al sitio web que no lo visualize, son extremadamente útiles en el propósito de guiar al programador que trabaja de nuevo en un proyecto, o para cualquier integrante nuevo <br>
+
+    Este texto es visible            <br>
+    <!--Pero no este texto-->
+
+    Se puede <!--hasta-->incluir entre los textos <!--lo que permite espicificar un proceso o el motivo de su inclusión--> </p>
+</body>
+</html>
