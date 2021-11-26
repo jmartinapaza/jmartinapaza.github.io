@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diseño_css_jhairmartin</title>
+<style>
+
+.ejemplo-span {
+    color: red;
+}
+
+.ejemplo-div {
+    background-color: rgb(243, 230, 255);
+    line-height: 1.5em;
+}
+
+.ejemplo-ov {
+    width: 40%; height: 150px;
+    background-color: rgb(204, 204, 204);
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+   
+
+body{
+    background-color: azure;
+}
+.box-model {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 40%;
+  display: block;
+  padding: 20px;
+  border:1px solid red;
+  border-top:5px solid rgb(51, 255, 51);
+  border-bottom:3px dashed gray;
+  text-align: center;
+  background-color: rgb(217, 179, 255);
+}
+
+.atributos {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nombre {
+    line-height: 1.75em;
+    font-size: 0.75em;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+    <h1>Diseño en CSS JM</h1>
+
+    <div class="ejemplo-div"> <h2>"span" y "div" JM</h2>
+
+    <p>Estos son dos elementos de HTML que pueden ser alterados por CSS, siendo span un trozo de texto y div, a una sección entera (como un párrafo)</p>
+
+    <p>span puede permitirse alterar una porción de un texto <span class="ejemplo-span">sin tener que empezar otro de nuevo</span> <br> 
+    mientras un texto entero (como este) es alterado por div</p></div>
+
+    <h2>Overflow JM</h2>
+
+   <div class="ejemplo-ov"> <p>Para evitar que se corte un texto si le damos un atributo de, por ejemplo, anchura y altura, se usa este comando, poniendo una barra de desplazamiento (en inglés, scrollbar), este texto mismo tiene esta etiqueta </p></div>
+
+   <div class="ejemplo-ov2"><p>Para evitar que se corte un texto si le damos un atributo de, por ejemplo, anchura y altura, se usa este comando, poniendo una barra de desplazamiento (en inglés, scrollbar), este texto mismo tiene esta etiqueta</p> </div>
+   <p></p>
+
+   <h2>Modelo en cajas JM</h2>
+   
+   <p>En CSS, el contenido principal (imagenes, texto, videos, etc) esta rodeado de varias "cajas" que sirven para delimitar el espacio que separa a un elemento del resto, de más externo a interno son:</p>
+   <ol>
+<li>Margen: La capa más al exterior y que determina el espacio entre el contenido elegido y los otros </li>
+<li>Borde: Envuelve al padding y contenido, puede ser alterado por CSS en asuntos como color, grosor de línea y más</li>
+<li>Relleno o padding: Es transparente y es usado para aislar al contenido</li>
+<li>El contenido mismo</li>
+   </ol>
+
+   <span class="box-model"><img src="images/css-box-model.png"></span>
+
+ <div class="atributos">  <p>Como ejemplo, esta imagen:</p>
+   <ul>
+<li>Tiene un relleno de 20 px en todas las direcciones</li>
+<li>Tiene un borde de color rojo de un 1 píxel de grueso a los lados, verde de 10px de grosor arriba y por abajo un border gris con líneas discontinuas de 5px de grosor </li>
+<li>Tiene un margen de 35px de arriba a abajo (los lados están en auto)</li>
+   </ul></div>
+
+  <span class="nombre"> <p>Jhair Martín Apaza Quispe <br>
+26 de noviembre de 2021</p></span>
+</body>
+</html>
