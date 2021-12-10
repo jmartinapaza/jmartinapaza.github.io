@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diseño_css3_jhairmartin</title>
+    
+    <style>
+
+        #prueba {
+          color: darkgreen;
+          font-size: 1.25em;
+          line-height: 1.5em ;
+        }
+        body  {
+            background-color: azure;
+        }
+
+        #imagen {
+            float: left;
+            width: 300px;
+            margin: 10px 10px 5px 10px;
+        }
+        #modificacion {
+            font-size: 0.75em;
+            padding: 10px 5px;
+        }
+
+        h2{
+            color: blueviolet;
+        }
+        #ej2 {
+            line-height: 1.75em;
+        }
+        .titulo {
+        
+            font-size: 2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            
+        
+        }
+
+        .columna {
+            float: right;
+            width: 35%;
+        }
+
+        .img{
+            float: left;
+            font-size: 2.5em;
+        }
+    
+    
+            #abajo {
+            
+            background-color: gray;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1.25em;
+        }
+    
+
+        
+        #template {
+            
+            width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    
+  
+    <h1>Continuación de diseño en CSS: Float y clear JM</h1>
+
+
+    <p id="modificacion">Última modificación: 9 de diciembre de 2021</p>
+
+
+    <h2>La etiqueta "float"</h2>
+    
+    <p>Esta etiqueta sirve para envolver a una imagen con texto </p>
+
+    <p>Ejemplo con un "float: left;"</p>
+    
+    
+    <p id="prueba"> <img src="images/murcia.jpg" alt="JPG de Murcia" id="imagen">
+        
+        "Murcia es una ciudad española, capital del municipio del mismo nombre y de la Región de Murcia. Es el centro de la comarca de la Huerta de Murcia y de su área metropolitana. Está situada en el sureste de la península ibérica, a orillas del río Segura, en la denominada depresión prelitoral murciana, a 40 kilómetros del mar Mediterráneo. Con 459 403 habitantes (INE, 2020), es el séptimo municipio más poblado de España.
+
+        El área urbana de la ciudad (o zona metropolitana), aunque no establecida oficialmente, comprendería a unos diez municipios de la Región de Murcia, contando con una población de 664 058 habitantes en 2019, repartidos en una superficie total de 1230,92 km², con una densidad de población de 539 hab/km². De este modo, el área urbana de Murcia ocuparía el 10º puesto en la lista de áreas metropolitanas de España.
+        
+        Es un importante centro de servicios en el que el sector terciario ha sucedido a su antigua condición de exportador agrícola por antonomasia, gracias a su célebre y fértil huerta, por la cual era conocido como la Huerta de Europa. Entre sus industrias más destacadas se encuentran la alimentaria, la textil, la química, la de destilación y la fabricación de muebles y materiales de construcción, estando muchas de ellas ubicadas en el Polígono Industrial Oeste, considerado uno de los más grandes de la península (compartido con el municipio de Alcantarilla).
+
+        Es también un importante centro de gran tradición universitaria desde que fuera fundada la primera universidad en 1272. Actualmente es sede de dos universidades: la pública Universidad de Murcia y la privada Universidad Católica San Antonio, con alrededor de 50 000 estudiantes."</p>
+
+        <p>Pero no es exclusivo a imágenes, pudiendo ser usado en textos</p>
+
+        <h2>Usos de "clear" </h2>
+
+        <p id="ej2">Sabiendo el comportamiento del modelo en cajas, se pueden asignar en diferentes lugares (float), y con clear, hacemos que el contenido se ponga debajo del elemento con la etiqueta "float" <br> 
+Aquí se presenta un ejemplo, teniendo la "imagen" float hacia la izquierda, y la columna hacia la derecha</p>
+
+      <div id="template"> <span class="titulo"><p>Título de un texto como, por ejemplo, artículos ó noticias</p></span>
+
+        <span class="img"><p>Imagen <br>
+            de<br>
+             ejemplo</p></span>
+        <span class="columna"><p>Columna al lado con enlaces</p>
+
+            <ul><li>Enlace 1</li> <br>
+           <li>Enlace 2</li>  <br>
+        <li>Enlace 3</li> </ul></span></div>
+
+        <div id="abajo"><p>Texto situado por debajo usando "clear: both;"</p></div>
+</body>
+</html>

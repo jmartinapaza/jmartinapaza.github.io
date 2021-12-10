@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diseño_css2_jhairmartin</title>
+<style>
+
+
+.absoluto {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+
+background-color: chartreuse;
+}
+body       {
+    background-color: azure;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+.relativo {
+    position: relative;
+background-color: coral;
+left: -50px;
+font-size: 1.5em;
+width: auto;
+}
+
+.fijado {
+right:0px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(255, 102, 102);
+    border: 3px solid rgb(179, 0, 0); 
+    font-weight: bold;
+}
+
+.z-index {
+position: relative;
+left: 10%;
+
+z-index: 0;}
+
+.sup {
+z-index: 1;
+font-size: 1.25em;
+position: relative;
+bottom: 50px;
+background-color: chartreuse;
+width: 150px;
+left: 70px;
+}
+
+.sub {
+    z-index: -1;
+    font-size: 1.25em;
+    position: relative;
+    bottom: 100px;
+    left: 15%;
+    background-color: coral;
+    width: 200px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Posicionamiento JM</h1>
+    
+<h6>Última modificación: 9 de diciembre de 2021</h6>
+
+    <p>Esta etiqueta indica dónde se situan los elementos en varias maneras, teniendo variantes</p>
+
+
+    <h2>1. Absoluto</h2>
+
+<p>Localiza al elemento dentro del borde de la página web, a no ser que este subordinado a otro  </p>
+
+<div class="absoluto"> <p>Este texto se situa 50 píxeles a la derecha y 75 hacia el techo de la página web</p></div>
+
+    <h2>2. Relativo</h2>
+
+<p>Mientras, el relativo altera la posición estándar del elemento</p>
+
+
+<div class="relativo"><p>Este texto puede hasta "meterse" dentro de la página, ocultando parte de este (valor de -50px)</p></div>
+    <h2>3. Fijado</h2>
+
+<p>Similar al absoluto, pero que se incrusta en la página, no desapareciendo al desplazarse por el sitio web, aqui esta en el centro y suelo de la página web</p>
+
+<div class="fijado"><p>Este texto se mantiene en su lugar de manera permanente</p></div>
+
+    <h2>4. El z-index</h2>
+
+    <p>Siendo solo aplicable a elementos con la etiqueta position (y otros), el z-index marca el orden de superponer varios elementos</p>
+
+    <p>En esta imagen hay un texto que se superpone y otro que se subordina</p>
+
+    <div class="z-index"><img src="images/LOGO_SIN_FONDO3.png" alt="Logo IES Gabriel Alonso de Herrera"></div>
+    <div class="sup"><p>Este texto se superpone al logo</p></div>
+    <div class="sub"><p>Mientras este texto se subordina al logo</p></div>
+<p>El que superpone tiene una anchura de 150px y se eleva 50px y 70px a la izquierda, mientras el que se subordina tiene 200 píxeles de ancho, se eleva 100px y va a la izquierda por 15%</p>
+</body>
+</html>
+
